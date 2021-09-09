@@ -1,0 +1,380 @@
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,500;1,500&display=swap');
+
+
+
+/* VARIÁVEIS */
+:root {
+    --font-padrao:'Montserrat', sans-serif;
+    --bg-color: #000;
+}
+/* FIM VARIÁVEIS */
+
+
+*, *:after, *:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+body {
+    background-image: url('../images/background3.jpg');
+    background-color: #000;
+    -webkit-font-smoothing: antialiased;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-linear {
+    background:linear-gradient(to top, #000 30%, transparent 70%);
+}
+
+.aviso {
+    margin-top:1px;
+    text-align: center;
+}
+
+.confidencial img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    content: " ";
+    height:100%;
+    width:400px  
+}
+
+h1 {
+    font-family:var(--font-padrao);
+    font-weight: 600!important;
+    color: #ffffffeb;
+    font-style: italic;
+    text-shadow: 2px 2px 5px #92939a;
+}
+
+article small {
+    font-size: 20px!important;
+    text-align: center;
+    margin-top: -25px;
+    color: #c201149e!important;
+    text-shadow: 1px 1px 5px #84444a61;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.disabled {
+    opacity: 0.4!important;
+}
+
+video {
+    opacity: 0.1;
+    margin-top:50px;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.cabecalho {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    margin-top:60px;
+    position: relative;
+    padding-bottom:50px;
+}
+
+.alert-warning {
+    color: #131313!important;
+    background-color: #ffc107!important;
+    border: 1px solid #ffc107!important;
+    font-weight: 600!important;
+    font-style: oblique;
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.video {
+    position: relative;
+    display: flex!important;
+    flex-direction: column;
+    min-height: 450px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sound::before {
+    content: " ";
+    background-image: url(../images/sound.svg);
+    width:25px;
+    height:25px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sound {
+    color: #fff !important;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: small!important; */
+    line-height: 1.2;
+    margin-top: 40px;
+    font-weight: 300!important;
+}
+
+#botao {
+    display: none;  
+    }
+
+.botao {
+    cursor: pointer;
+    height: 60px;
+    line-height: 45px!important;
+    margin-top: 50px;
+    font-family: 'Exo', sans-serif!important;
+    font-weight: 500!important;
+    text-transform: uppercase;
+    background-color: #ffc107!important;
+    border-color:#ffc107!important;
+}
+
+a {
+    text-decoration: none!important;
+    color:#141414 !important;
+}
+
+.modall {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1.5;
+    padding: 1rem 2rem;
+  }
+
+.cartoes {
+    display: none;
+    margin-top: 15px;
+}
+
+.mc, .pp, .vs, .ap {
+    content: " ";
+    width:50px;
+    height:50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mc {
+    background-image: url('../images/mc.svg');
+    margin-right: 80px;
+}
+
+.pp {
+    background-image: url('../images/pp.svg');
+    margin-right: 80px;
+}
+
+.ap {
+    background-image: url('../images/ap.svg');
+    margin-right: 80px;
+}
+
+.vs {
+    background-image: url('../images/vs.svg');
+}
+
+footer {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-color: #000;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.logo img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.by {
+    font-weight: 400!important;
+    width: 100%;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.by p {
+    margin-bottom: 0!Important;
+}
+
+.fb {
+    font-weight: 300!important;
+    color: rgba(255, 255, 255, 0.548);
+    font-size: 11px!important;
+    margin-top: 20px!important;
+}
+
+.links {
+    display: flex;
+    justify-content:center;
+    margin-top: 22px;
+}
+
+.links .btn-primary {
+    border:0!Important;
+    background-color:transparent!important;
+}
+
+.links .btn {
+    padding:0!important;
+}
+
+.sair {
+    padding: 100px!important;
+}
+
+.termos {
+    margin-left: 40px;
+}
+
+.modal-title {
+    color:#000;
+}
+
+.modal-body {
+    color:#666;
+    text-align: left;
+    text-indent: 25px;
+}
+
+.modal h3, 
+.modal h4 {
+    text-align: center;
+    font-weight: 500;
+    color: gray;
+}
+
+.modal span {
+        text-align: center!important;
+        display: flex;
+        justify-content: center;
+        text-indent: 0!Important;
+}
+
+
+
+
+
+
+/* BARRA DE ROLAGEM */
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .modall {
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+      background-color: rgb(0 0 0 / 9%); 
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(218, 221, 228);
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 1px #000000;
+    background-color: #70abd3;
+}
+
+::-webkit-scrollbar-track-piece  { 
+    background-color: #70abd34b;
+}
+
+.destaque {
+    color: #c20114!important;
+    margin-bottom: 0!important;
+    text-shadow: 2px 2px 5px #84444a;
+}
+/* FIM BARRA DE ROLAGEM */
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 575.98px) { 
+    .confidencial img {
+        width:300px  
+    }
+    
+    .cabecalho {
+        margin-top: 0;
+    }
+
+    .titulo--principal h1 {
+        font-size: 22px!important;
+    }
+
+    article small {
+        font-size: 16px!important;
+    }
+    .destaque {
+        color: #c20114c2!important;
+        margin-bottom: 0!important;
+        text-shadow: 2px 2px 5px #8d3b44;
+    }
+    
+    .sound {
+        font-size:small;
+    }
+
+    .pp,
+    .ap,
+    .mc {
+        margin-right: 20px;
+    }
+
+    .cartoes {
+        margin-top:25px
+    }
+    .botao {
+        height: 50px;
+        line-height: 30px!important;
+    }
+    .botao a{
+        font-size: 12px;
+    }
+ }
+
+ .botao {
+    display: none;
+}
+
+/* FIM RESPONSIVIDADE */
